@@ -7,7 +7,10 @@
         <module>eureka-service</module>
 		<module>eureka-client</module>
 		<module>eureka-feign-client</module>
-    </modules>
+		<module>product-common</module>
+		<module>product-provider</module>
+		<module>product-client</module>
+	</modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -35,6 +38,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.4</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
